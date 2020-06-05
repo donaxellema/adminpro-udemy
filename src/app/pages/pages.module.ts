@@ -6,9 +6,19 @@ import { SharedModule } from '../shared/shared.module';
 
 import { PAGES_ROUTES } from './pages.routes';
 
+import { FormsModule } from '@angular/forms';
+
+
+// ng2 charts
+import { ChartsModule } from 'ng2-charts';
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgessComponent } from './progess/progess.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
+
+// importacion temportal
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { GraficaDoughnutComponent } from '../components/grafica-doughnut/grafica-doughnut.component';
 
 
 
@@ -19,7 +29,9 @@ import { Graficas1Component } from './graficas1/graficas1.component';
         PagesComponent,
         DashboardComponent,
         ProgessComponent,
-        Graficas1Component
+        Graficas1Component,
+        IncrementadorComponent,
+        GraficaDoughnutComponent
     ],
     exports: [
         DashboardComponent,
@@ -28,7 +40,9 @@ import { Graficas1Component } from './graficas1/graficas1.component';
     ],
     imports: [
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        FormsModule,
+        ChartsModule
     ]
 })
 export class PagesModule {}
