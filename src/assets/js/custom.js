@@ -4,6 +4,14 @@ Author: Wrappixel
 Email: niravjoshi87@gmail.com
 File: js
 */
+
+/* Como llamar una funcion jquery que esta fuera de angular con una funcion */
+/* Creo una funcion la cual encierra a la funcion donde carga los plugins */
+
+
+/* Despues debo dirigirme al login component.ts */
+function init_plugins(){
+
 $(function() {
     "use strict";
     $(function() {
@@ -155,3 +163,6 @@ $(function() {
     });
 
 });
+
+
+}

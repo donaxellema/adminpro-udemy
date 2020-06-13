@@ -19,6 +19,7 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 // importacion temportal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficaDoughnutComponent } from '../components/grafica-doughnut/grafica-doughnut.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -31,7 +32,8 @@ import { GraficaDoughnutComponent } from '../components/grafica-doughnut/grafica
         ProgessComponent,
         Graficas1Component,
         IncrementadorComponent,
-        GraficaDoughnutComponent
+        GraficaDoughnutComponent,
+        AccountSettingsComponent
     ],
     exports: [
         DashboardComponent,
